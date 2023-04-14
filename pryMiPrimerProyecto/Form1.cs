@@ -10,11 +10,41 @@ using System.Windows.Forms;
 
 namespace pryMiPrimerProyecto
 {
-    public partial class Form1 : Form
+    public partial class frmPrincipal : Form
     {
-        public Form1()
+        public frmPrincipal()
         {
             InitializeComponent();
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblDepocito_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtDeposito_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblMonto_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtMonto_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmPrincipal_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
