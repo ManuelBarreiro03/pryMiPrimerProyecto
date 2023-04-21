@@ -46,5 +46,10 @@ namespace pryMiPrimerProyecto
         {
 
         }
+
+        private void mrcGastosFijos_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -28,18 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             this.lblDepocito = new System.Windows.Forms.Label();
             this.txtDeposito = new System.Windows.Forms.TextBox();
             this.mrcGastoFijos = new System.Windows.Forms.GroupBox();
-            this.lblImpuestos = new System.Windows.Forms.Label();
-            this.lblAlquiler = new System.Windows.Forms.Label();
-            this.lblComida = new System.Windows.Forms.Label();
-            this.txtImpuestos = new System.Windows.Forms.TextBox();
-            this.txtAlquiler = new System.Windows.Forms.TextBox();
             this.txtComida = new System.Windows.Forms.TextBox();
+            this.txtAlquiler = new System.Windows.Forms.TextBox();
+            this.txtImpuestos = new System.Windows.Forms.TextBox();
+            this.lblComida = new System.Windows.Forms.Label();
+            this.lblAlquiler = new System.Windows.Forms.Label();
+            this.lblImpuestos = new System.Windows.Forms.Label();
             this.mrcGastosFijos = new System.Windows.Forms.GroupBox();
-            this.lblMonto = new System.Windows.Forms.Label();
             this.txtMonto = new System.Windows.Forms.TextBox();
+            this.lblMonto = new System.Windows.Forms.Label();
             this.cmdCalcular = new System.Windows.Forms.Button();
             this.cmdCancelar = new System.Windows.Forms.Button();
             this.lblTotal = new System.Windows.Forms.Label();
@@ -63,7 +64,7 @@
             this.txtDeposito.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDeposito.Location = new System.Drawing.Point(143, 32);
             this.txtDeposito.Name = "txtDeposito";
-            this.txtDeposito.Size = new System.Drawing.Size(291, 26);
+            this.txtDeposito.Size = new System.Drawing.Size(115, 26);
             this.txtDeposito.TabIndex = 1;
             this.txtDeposito.TextChanged += new System.EventHandler(this.txtDeposito_TextChanged);
             // 
@@ -76,32 +77,34 @@
             this.mrcGastoFijos.Controls.Add(this.lblAlquiler);
             this.mrcGastoFijos.Controls.Add(this.lblImpuestos);
             this.mrcGastoFijos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mrcGastoFijos.Location = new System.Drawing.Point(33, 89);
+            this.mrcGastoFijos.Location = new System.Drawing.Point(33, 64);
             this.mrcGastoFijos.Name = "mrcGastoFijos";
-            this.mrcGastoFijos.Size = new System.Drawing.Size(421, 139);
+            this.mrcGastoFijos.Size = new System.Drawing.Size(251, 139);
             this.mrcGastoFijos.TabIndex = 2;
             this.mrcGastoFijos.TabStop = false;
             this.mrcGastoFijos.Text = "Gastos Fijos";
             // 
-            // lblImpuestos
+            // txtComida
             // 
-            this.lblImpuestos.AutoSize = true;
-            this.lblImpuestos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.lblImpuestos.Location = new System.Drawing.Point(18, 33);
-            this.lblImpuestos.Name = "lblImpuestos";
-            this.lblImpuestos.Size = new System.Drawing.Size(86, 20);
-            this.lblImpuestos.TabIndex = 0;
-            this.lblImpuestos.Text = "Impuestos";
+            this.txtComida.Location = new System.Drawing.Point(110, 92);
+            this.txtComida.Name = "txtComida";
+            this.txtComida.Size = new System.Drawing.Size(115, 26);
+            this.txtComida.TabIndex = 5;
+            this.txtComida.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
-            // lblAlquiler
+            // txtAlquiler
             // 
-            this.lblAlquiler.AutoSize = true;
-            this.lblAlquiler.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.lblAlquiler.Location = new System.Drawing.Point(18, 65);
-            this.lblAlquiler.Name = "lblAlquiler";
-            this.lblAlquiler.Size = new System.Drawing.Size(65, 20);
-            this.lblAlquiler.TabIndex = 1;
-            this.lblAlquiler.Text = "Alquiler";
+            this.txtAlquiler.Location = new System.Drawing.Point(110, 59);
+            this.txtAlquiler.Name = "txtAlquiler";
+            this.txtAlquiler.Size = new System.Drawing.Size(115, 26);
+            this.txtAlquiler.TabIndex = 4;
+            // 
+            // txtImpuestos
+            // 
+            this.txtImpuestos.Location = new System.Drawing.Point(110, 27);
+            this.txtImpuestos.Name = "txtImpuestos";
+            this.txtImpuestos.Size = new System.Drawing.Size(115, 26);
+            this.txtImpuestos.TabIndex = 3;
             // 
             // lblComida
             // 
@@ -113,78 +116,77 @@
             this.lblComida.TabIndex = 2;
             this.lblComida.Text = "Comida";
             // 
-            // txtImpuestos
+            // lblAlquiler
             // 
-            this.txtImpuestos.Location = new System.Drawing.Point(110, 27);
-            this.txtImpuestos.Name = "txtImpuestos";
-            this.txtImpuestos.Size = new System.Drawing.Size(291, 26);
-            this.txtImpuestos.TabIndex = 3;
+            this.lblAlquiler.AutoSize = true;
+            this.lblAlquiler.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.lblAlquiler.Location = new System.Drawing.Point(18, 65);
+            this.lblAlquiler.Name = "lblAlquiler";
+            this.lblAlquiler.Size = new System.Drawing.Size(65, 20);
+            this.lblAlquiler.TabIndex = 1;
+            this.lblAlquiler.Text = "Alquiler";
             // 
-            // txtAlquiler
+            // lblImpuestos
             // 
-            this.txtAlquiler.Location = new System.Drawing.Point(110, 59);
-            this.txtAlquiler.Name = "txtAlquiler";
-            this.txtAlquiler.Size = new System.Drawing.Size(291, 26);
-            this.txtAlquiler.TabIndex = 4;
-            // 
-            // txtComida
-            // 
-            this.txtComida.Location = new System.Drawing.Point(110, 92);
-            this.txtComida.Name = "txtComida";
-            this.txtComida.Size = new System.Drawing.Size(291, 26);
-            this.txtComida.TabIndex = 5;
-            this.txtComida.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            this.lblImpuestos.AutoSize = true;
+            this.lblImpuestos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.lblImpuestos.Location = new System.Drawing.Point(18, 33);
+            this.lblImpuestos.Name = "lblImpuestos";
+            this.lblImpuestos.Size = new System.Drawing.Size(86, 20);
+            this.lblImpuestos.TabIndex = 0;
+            this.lblImpuestos.Text = "Impuestos";
             // 
             // mrcGastosFijos
             // 
             this.mrcGastosFijos.Controls.Add(this.txtMonto);
             this.mrcGastosFijos.Controls.Add(this.lblMonto);
             this.mrcGastosFijos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mrcGastosFijos.Location = new System.Drawing.Point(33, 254);
+            this.mrcGastosFijos.Location = new System.Drawing.Point(33, 209);
             this.mrcGastosFijos.Name = "mrcGastosFijos";
-            this.mrcGastosFijos.Size = new System.Drawing.Size(421, 117);
+            this.mrcGastosFijos.Size = new System.Drawing.Size(251, 83);
             this.mrcGastosFijos.TabIndex = 3;
             this.mrcGastosFijos.TabStop = false;
             this.mrcGastosFijos.Text = "Gastos Varios";
+            this.mrcGastosFijos.Enter += new System.EventHandler(this.mrcGastosFijos_Enter);
+            // 
+            // txtMonto
+            // 
+            this.txtMonto.Location = new System.Drawing.Point(110, 39);
+            this.txtMonto.Name = "txtMonto";
+            this.txtMonto.Size = new System.Drawing.Size(115, 26);
+            this.txtMonto.TabIndex = 1;
+            this.txtMonto.TextChanged += new System.EventHandler(this.txtMonto_TextChanged);
             // 
             // lblMonto
             // 
             this.lblMonto.AutoSize = true;
             this.lblMonto.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F);
-            this.lblMonto.Location = new System.Drawing.Point(18, 55);
+            this.lblMonto.Location = new System.Drawing.Point(18, 40);
             this.lblMonto.Name = "lblMonto";
             this.lblMonto.Size = new System.Drawing.Size(59, 22);
             this.lblMonto.TabIndex = 0;
             this.lblMonto.Text = "Monto";
             this.lblMonto.Click += new System.EventHandler(this.lblMonto_Click);
             // 
-            // txtMonto
-            // 
-            this.txtMonto.Location = new System.Drawing.Point(110, 51);
-            this.txtMonto.Name = "txtMonto";
-            this.txtMonto.Size = new System.Drawing.Size(291, 26);
-            this.txtMonto.TabIndex = 1;
-            this.txtMonto.TextChanged += new System.EventHandler(this.txtMonto_TextChanged);
-            // 
             // cmdCalcular
             // 
-            this.cmdCalcular.BackColor = System.Drawing.Color.Lime;
+            this.cmdCalcular.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.cmdCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdCalcular.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.cmdCalcular.Location = new System.Drawing.Point(33, 466);
+            this.cmdCalcular.Location = new System.Drawing.Point(33, 333);
             this.cmdCalcular.Name = "cmdCalcular";
-            this.cmdCalcular.Size = new System.Drawing.Size(202, 67);
+            this.cmdCalcular.Size = new System.Drawing.Size(104, 38);
             this.cmdCalcular.TabIndex = 4;
             this.cmdCalcular.Text = "Calcular";
             this.cmdCalcular.UseVisualStyleBackColor = false;
             // 
             // cmdCancelar
             // 
-            this.cmdCancelar.BackColor = System.Drawing.Color.Yellow;
+            this.cmdCancelar.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.cmdCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdCancelar.Location = new System.Drawing.Point(260, 467);
+            this.cmdCancelar.Location = new System.Drawing.Point(168, 333);
             this.cmdCancelar.Name = "cmdCancelar";
-            this.cmdCancelar.Size = new System.Drawing.Size(194, 66);
+            this.cmdCancelar.Size = new System.Drawing.Size(90, 38);
             this.cmdCancelar.TabIndex = 5;
             this.cmdCancelar.Text = "Cancelar";
             this.cmdCancelar.UseVisualStyleBackColor = false;
@@ -193,7 +195,7 @@
             // 
             this.lblTotal.AutoSize = true;
             this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotal.Location = new System.Drawing.Point(51, 409);
+            this.lblTotal.Location = new System.Drawing.Point(51, 295);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(44, 20);
             this.lblTotal.TabIndex = 6;
@@ -204,7 +206,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Snow;
-            this.ClientSize = new System.Drawing.Size(491, 563);
+            this.ClientSize = new System.Drawing.Size(312, 385);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.cmdCancelar);
             this.Controls.Add(this.cmdCalcular);
@@ -213,6 +215,7 @@
             this.Controls.Add(this.txtDeposito);
             this.Controls.Add(this.lblDepocito);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmPrincipal";
             this.Text = "Gestion De Preosupuesto Mensual";
             this.Load += new System.EventHandler(this.frmPrincipal_Load);
