@@ -67,12 +67,6 @@
     <Compile Include="frmFinancias.Designer.cs">
       <DependentUpon>frmFinancias.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmSexualidad.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmSexualidad.Designer.cs">
-      <DependentUpon>frmSexualidad.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmAlacena.resx">
@@ -83,9 +77,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmFinancias.resx">
       <DependentUpon>frmFinancias.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmSexualidad.resx">
-      <DependentUpon>frmSexualidad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

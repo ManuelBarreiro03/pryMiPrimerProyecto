@@ -30,7 +30,6 @@
         {
             this.cmdAlimentos = new System.Windows.Forms.Button();
             this.cmdFinancias = new System.Windows.Forms.Button();
-            this.cmdVosSos = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // cmdAlimentos
@@ -53,22 +52,11 @@
             this.cmdFinancias.UseVisualStyleBackColor = true;
             this.cmdFinancias.Click += new System.EventHandler(this.button2_Click);
             // 
-            // cmdVosSos
-            // 
-            this.cmdVosSos.Location = new System.Drawing.Point(12, 343);
-            this.cmdVosSos.Name = "cmdVosSos";
-            this.cmdVosSos.Size = new System.Drawing.Size(442, 160);
-            this.cmdVosSos.TabIndex = 2;
-            this.cmdVosSos.Text = "Vos sos";
-            this.cmdVosSos.UseVisualStyleBackColor = true;
-            this.cmdVosSos.Click += new System.EventHandler(this.cmdVoz_Click);
-            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(466, 518);
-            this.Controls.Add(this.cmdVosSos);
             this.Controls.Add(this.cmdFinancias);
             this.Controls.Add(this.cmdAlimentos);
             this.Name = "frmPrincipal";
@@ -81,6 +69,5 @@
 
         private System.Windows.Forms.Button cmdAlimentos;
         private System.Windows.Forms.Button cmdFinancias;
-        private System.Windows.Forms.Button cmdVosSos;
     }
 }
