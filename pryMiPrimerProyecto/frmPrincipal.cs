@@ -30,12 +30,5 @@ namespace pryMiPrimerProyecto
 
             ventanaFinancias.ShowDialog();
         }
-
-        private void cmdVoz_Click(object sender, EventArgs e)
-        {
-            frmSexualidad ventanaSexualidad = new frmSexualidad();
-
-            ventanaSexualidad.ShowDialog();
-        }
-    }
+     }
 }

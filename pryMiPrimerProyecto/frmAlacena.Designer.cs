@@ -30,21 +30,21 @@
         {
             this.lblAlimentos = new System.Windows.Forms.Label();
             this.mrcAlacena = new System.Windows.Forms.GroupBox();
-            this.lblAlimentoAlacena = new System.Windows.Forms.Label();
-            this.txtAlacena = new System.Windows.Forms.TextBox();
-            this.lstAlimentosAlacena = new System.Windows.Forms.ComboBox();
-            this.cmdAgregarAlcena = new System.Windows.Forms.Button();
-            this.cmdSacarAlacena = new System.Windows.Forms.Button();
-            this.mrcHeladera = new System.Windows.Forms.GroupBox();
+            this.lblCantidadAlacena = new System.Windows.Forms.Label();
             this.lblCuantoConsumioAlacena = new System.Windows.Forms.Label();
+            this.cmdSacarAlacena = new System.Windows.Forms.Button();
+            this.cmdAgregarAlcena = new System.Windows.Forms.Button();
+            this.lstAlimentosAlacena = new System.Windows.Forms.ComboBox();
+            this.txtAlacena = new System.Windows.Forms.TextBox();
+            this.lblAlimentoAlacena = new System.Windows.Forms.Label();
+            this.mrcHeladera = new System.Windows.Forms.GroupBox();
+            this.lblCantidadHeladera = new System.Windows.Forms.Label();
             this.lblCuantoConsumioHeladera = new System.Windows.Forms.Label();
             this.cmdSacarHeladera = new System.Windows.Forms.Button();
             this.cmdAgrgarHeladera = new System.Windows.Forms.Button();
             this.lstAlimentosHeladera = new System.Windows.Forms.ComboBox();
             this.txtHeladera = new System.Windows.Forms.TextBox();
             this.lblAlimentoHeladera = new System.Windows.Forms.Label();
-            this.lblCantidadAlacena = new System.Windows.Forms.Label();
-            this.lblCantidadHeladera = new System.Windows.Forms.Label();
             this.mrcAlacena.SuspendLayout();
             this.mrcHeladera.SuspendLayout();
             this.SuspendLayout();
@@ -75,42 +75,25 @@
             this.mrcAlacena.TabIndex = 1;
             this.mrcAlacena.TabStop = false;
             this.mrcAlacena.Text = "Alacena";
-            this.mrcAlacena.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // lblAlimentoAlacena
+            // lblCantidadAlacena
             // 
-            this.lblAlimentoAlacena.AutoSize = true;
-            this.lblAlimentoAlacena.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.lblAlimentoAlacena.Location = new System.Drawing.Point(30, 37);
-            this.lblAlimentoAlacena.Name = "lblAlimentoAlacena";
-            this.lblAlimentoAlacena.Size = new System.Drawing.Size(65, 18);
-            this.lblAlimentoAlacena.TabIndex = 1;
-            this.lblAlimentoAlacena.Text = "Alimento";
+            this.lblCantidadAlacena.AutoSize = true;
+            this.lblCantidadAlacena.Location = new System.Drawing.Point(29, 70);
+            this.lblCantidadAlacena.Name = "lblCantidadAlacena";
+            this.lblCantidadAlacena.Size = new System.Drawing.Size(75, 20);
+            this.lblCantidadAlacena.TabIndex = 7;
+            this.lblCantidadAlacena.Text = "Cantidad";
             // 
-            // txtAlacena
+            // lblCuantoConsumioAlacena
             // 
-            this.txtAlacena.Location = new System.Drawing.Point(86, 114);
-            this.txtAlacena.Name = "txtAlacena";
-            this.txtAlacena.Size = new System.Drawing.Size(134, 26);
-            this.txtAlacena.TabIndex = 2;
-            // 
-            // lstAlimentosAlacena
-            // 
-            this.lstAlimentosAlacena.FormattingEnabled = true;
-            this.lstAlimentosAlacena.Location = new System.Drawing.Point(120, 33);
-            this.lstAlimentosAlacena.Name = "lstAlimentosAlacena";
-            this.lstAlimentosAlacena.Size = new System.Drawing.Size(167, 28);
-            this.lstAlimentosAlacena.TabIndex = 3;
-            // 
-            // cmdAgregarAlcena
-            // 
-            this.cmdAgregarAlcena.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.cmdAgregarAlcena.Location = new System.Drawing.Point(84, 146);
-            this.cmdAgregarAlcena.Name = "cmdAgregarAlcena";
-            this.cmdAgregarAlcena.Size = new System.Drawing.Size(62, 23);
-            this.cmdAgregarAlcena.TabIndex = 4;
-            this.cmdAgregarAlcena.Text = "Agregar";
-            this.cmdAgregarAlcena.UseVisualStyleBackColor = true;
+            this.lblCuantoConsumioAlacena.AutoSize = true;
+            this.lblCuantoConsumioAlacena.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.lblCuantoConsumioAlacena.Location = new System.Drawing.Point(83, 98);
+            this.lblCuantoConsumioAlacena.Name = "lblCuantoConsumioAlacena";
+            this.lblCuantoConsumioAlacena.Size = new System.Drawing.Size(137, 13);
+            this.lblCuantoConsumioAlacena.TabIndex = 6;
+            this.lblCuantoConsumioAlacena.Text = "Cuanto Consumio/Compro?";
             // 
             // cmdSacarAlacena
             // 
@@ -121,6 +104,42 @@
             this.cmdSacarAlacena.TabIndex = 5;
             this.cmdSacarAlacena.Text = "Sacar";
             this.cmdSacarAlacena.UseVisualStyleBackColor = true;
+            // 
+            // cmdAgregarAlcena
+            // 
+            this.cmdAgregarAlcena.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.cmdAgregarAlcena.Location = new System.Drawing.Point(84, 146);
+            this.cmdAgregarAlcena.Name = "cmdAgregarAlcena";
+            this.cmdAgregarAlcena.Size = new System.Drawing.Size(62, 23);
+            this.cmdAgregarAlcena.TabIndex = 4;
+            this.cmdAgregarAlcena.Text = "Agregar";
+            this.cmdAgregarAlcena.UseVisualStyleBackColor = true;
+            this.cmdAgregarAlcena.Click += new System.EventHandler(this.cmdAgregarAlcena_Click);
+            // 
+            // lstAlimentosAlacena
+            // 
+            this.lstAlimentosAlacena.FormattingEnabled = true;
+            this.lstAlimentosAlacena.Location = new System.Drawing.Point(120, 33);
+            this.lstAlimentosAlacena.Name = "lstAlimentosAlacena";
+            this.lstAlimentosAlacena.Size = new System.Drawing.Size(167, 28);
+            this.lstAlimentosAlacena.TabIndex = 3;
+            // 
+            // txtAlacena
+            // 
+            this.txtAlacena.Location = new System.Drawing.Point(86, 114);
+            this.txtAlacena.Name = "txtAlacena";
+            this.txtAlacena.Size = new System.Drawing.Size(134, 26);
+            this.txtAlacena.TabIndex = 2;
+            // 
+            // lblAlimentoAlacena
+            // 
+            this.lblAlimentoAlacena.AutoSize = true;
+            this.lblAlimentoAlacena.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.lblAlimentoAlacena.Location = new System.Drawing.Point(30, 37);
+            this.lblAlimentoAlacena.Name = "lblAlimentoAlacena";
+            this.lblAlimentoAlacena.Size = new System.Drawing.Size(65, 18);
+            this.lblAlimentoAlacena.TabIndex = 1;
+            this.lblAlimentoAlacena.Text = "Alimento";
             // 
             // mrcHeladera
             // 
@@ -139,15 +158,14 @@
             this.mrcHeladera.TabStop = false;
             this.mrcHeladera.Text = "Heladera o Freezer";
             // 
-            // lblCuantoConsumioAlacena
+            // lblCantidadHeladera
             // 
-            this.lblCuantoConsumioAlacena.AutoSize = true;
-            this.lblCuantoConsumioAlacena.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.lblCuantoConsumioAlacena.Location = new System.Drawing.Point(83, 98);
-            this.lblCuantoConsumioAlacena.Name = "lblCuantoConsumioAlacena";
-            this.lblCuantoConsumioAlacena.Size = new System.Drawing.Size(137, 13);
-            this.lblCuantoConsumioAlacena.TabIndex = 6;
-            this.lblCuantoConsumioAlacena.Text = "Cuanto Consumio/Compro?";
+            this.lblCantidadHeladera.AutoSize = true;
+            this.lblCantidadHeladera.Location = new System.Drawing.Point(29, 63);
+            this.lblCantidadHeladera.Name = "lblCantidadHeladera";
+            this.lblCantidadHeladera.Size = new System.Drawing.Size(75, 20);
+            this.lblCantidadHeladera.TabIndex = 13;
+            this.lblCantidadHeladera.Text = "Cantidad";
             // 
             // lblCuantoConsumioHeladera
             // 
@@ -204,27 +222,7 @@
             this.lblAlimentoHeladera.TabIndex = 7;
             this.lblAlimentoHeladera.Text = "Alimento";
             // 
-            // lblCantidadAlacena
-            // 
-            this.lblCantidadAlacena.AutoSize = true;
-            this.lblCantidadAlacena.Location = new System.Drawing.Point(29, 70);
-            this.lblCantidadAlacena.Name = "lblCantidadAlacena";
-            this.lblCantidadAlacena.Size = new System.Drawing.Size(75, 20);
-            this.lblCantidadAlacena.TabIndex = 7;
-            this.lblCantidadAlacena.Text = "Cantidad";
-            this.lblCantidadAlacena.Click += new System.EventHandler(this.label6_Click);
-            // 
-            // lblCantidadHeladera
-            // 
-            this.lblCantidadHeladera.AutoSize = true;
-            this.lblCantidadHeladera.Location = new System.Drawing.Point(29, 63);
-            this.lblCantidadHeladera.Name = "lblCantidadHeladera";
-            this.lblCantidadHeladera.Size = new System.Drawing.Size(75, 20);
-            this.lblCantidadHeladera.TabIndex = 13;
-            this.lblCantidadHeladera.Text = "Cantidad";
-            this.lblCantidadHeladera.Click += new System.EventHandler(this.label7_Click);
-            // 
-            // frmAlimentos
+            // frmAlacena
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -232,7 +230,7 @@
             this.Controls.Add(this.mrcHeladera);
             this.Controls.Add(this.mrcAlacena);
             this.Controls.Add(this.lblAlimentos);
-            this.Name = "frmAlimentos";
+            this.Name = "frmAlacena";
             this.Text = "frmAlacena";
             this.mrcAlacena.ResumeLayout(false);
             this.mrcAlacena.PerformLayout();

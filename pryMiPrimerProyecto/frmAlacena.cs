@@ -12,22 +12,13 @@ namespace pryMiPrimerProyecto
 {
     public partial class frmAlacena : Form
     {
+        decimal cantidadAlcena;
         public frmAlacena()
         {
             InitializeComponent();
         }
 
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
+        private void cmdAgregarAlcena_Click(object sender, EventArgs e)
         {
 
         }

@@ -29,21 +29,20 @@
         private void InitializeComponent()
         {
             this.lblPresupuesto = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtPresupuesto = new System.Windows.Forms.TextBox();
             this.mrcConsumo = new System.Windows.Forms.GroupBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtVario = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtComida = new System.Windows.Forms.TextBox();
+            this.txtAlquiler = new System.Windows.Forms.TextBox();
+            this.txtImpuesto = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.cmdCalcular = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblMonto = new System.Windows.Forms.Label();
+            this.lblGastado = new System.Windows.Forms.Label();
             this.mrcConsumo.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,22 +55,21 @@
             this.lblPresupuesto.Size = new System.Drawing.Size(99, 20);
             this.lblPresupuesto.TabIndex = 0;
             this.lblPresupuesto.Text = "Presupuesto";
-            this.lblPresupuesto.Click += new System.EventHandler(this.lblPresupuesto_Click);
             // 
-            // textBox1
+            // txtPresupuesto
             // 
-            this.textBox1.Location = new System.Drawing.Point(110, 28);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(148, 20);
-            this.textBox1.TabIndex = 1;
+            this.txtPresupuesto.Location = new System.Drawing.Point(110, 28);
+            this.txtPresupuesto.Name = "txtPresupuesto";
+            this.txtPresupuesto.Size = new System.Drawing.Size(148, 20);
+            this.txtPresupuesto.TabIndex = 1;
             // 
             // mrcConsumo
             // 
-            this.mrcConsumo.Controls.Add(this.textBox5);
+            this.mrcConsumo.Controls.Add(this.txtVario);
             this.mrcConsumo.Controls.Add(this.label4);
-            this.mrcConsumo.Controls.Add(this.textBox4);
-            this.mrcConsumo.Controls.Add(this.textBox3);
-            this.mrcConsumo.Controls.Add(this.textBox2);
+            this.mrcConsumo.Controls.Add(this.txtComida);
+            this.mrcConsumo.Controls.Add(this.txtAlquiler);
+            this.mrcConsumo.Controls.Add(this.txtImpuesto);
             this.mrcConsumo.Controls.Add(this.label3);
             this.mrcConsumo.Controls.Add(this.label2);
             this.mrcConsumo.Controls.Add(this.label1);
@@ -83,12 +81,12 @@
             this.mrcConsumo.TabStop = false;
             this.mrcConsumo.Text = "Consumo";
             // 
-            // textBox5
+            // txtVario
             // 
-            this.textBox5.Location = new System.Drawing.Point(98, 131);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(148, 26);
-            this.textBox5.TabIndex = 8;
+            this.txtVario.Location = new System.Drawing.Point(98, 131);
+            this.txtVario.Name = "txtVario";
+            this.txtVario.Size = new System.Drawing.Size(148, 26);
+            this.txtVario.TabIndex = 8;
             // 
             // label4
             // 
@@ -100,26 +98,26 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "Vario";
             // 
-            // textBox4
+            // txtComida
             // 
-            this.textBox4.Location = new System.Drawing.Point(98, 99);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(148, 26);
-            this.textBox4.TabIndex = 6;
+            this.txtComida.Location = new System.Drawing.Point(98, 99);
+            this.txtComida.Name = "txtComida";
+            this.txtComida.Size = new System.Drawing.Size(148, 26);
+            this.txtComida.TabIndex = 6;
             // 
-            // textBox3
+            // txtAlquiler
             // 
-            this.textBox3.Location = new System.Drawing.Point(98, 67);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(148, 26);
-            this.textBox3.TabIndex = 5;
+            this.txtAlquiler.Location = new System.Drawing.Point(98, 67);
+            this.txtAlquiler.Name = "txtAlquiler";
+            this.txtAlquiler.Size = new System.Drawing.Size(148, 26);
+            this.txtAlquiler.TabIndex = 5;
             // 
-            // textBox2
+            // txtImpuesto
             // 
-            this.textBox2.Location = new System.Drawing.Point(98, 31);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(148, 26);
-            this.textBox2.TabIndex = 4;
+            this.txtImpuesto.Location = new System.Drawing.Point(98, 31);
+            this.txtImpuesto.Name = "txtImpuesto";
+            this.txtImpuesto.Size = new System.Drawing.Size(148, 26);
+            this.txtImpuesto.TabIndex = 4;
             // 
             // label3
             // 
@@ -150,67 +148,59 @@
             this.label1.Size = new System.Drawing.Size(77, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "Impuestos";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label6
+            // cmdCalcular
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.label6.Location = new System.Drawing.Point(8, 231);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(69, 18);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Ahorrado";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(110, 234);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(148, 20);
-            this.textBox6.TabIndex = 3;
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.button1.Location = new System.Drawing.Point(12, 280);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(136, 52);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Calcular";
-            this.button1.UseVisualStyleBackColor = true;
+            this.cmdCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.cmdCalcular.Location = new System.Drawing.Point(12, 300);
+            this.cmdCalcular.Name = "cmdCalcular";
+            this.cmdCalcular.Size = new System.Drawing.Size(136, 52);
+            this.cmdCalcular.TabIndex = 4;
+            this.cmdCalcular.Text = "Calcular";
+            this.cmdCalcular.UseVisualStyleBackColor = true;
+            this.cmdCalcular.Click += new System.EventHandler(this.cmdCalcular_Click);
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.button2.Location = new System.Drawing.Point(172, 280);
+            this.button2.Location = new System.Drawing.Point(172, 300);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(124, 52);
             this.button2.TabIndex = 5;
             this.button2.Text = "Cancelar";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // label5
+            // lblMonto
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.label5.Location = new System.Drawing.Point(8, 257);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(136, 18);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Presupuesto Actual";
+            this.lblMonto.AutoSize = true;
+            this.lblMonto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.lblMonto.Location = new System.Drawing.Point(28, 231);
+            this.lblMonto.Name = "lblMonto";
+            this.lblMonto.Size = new System.Drawing.Size(55, 18);
+            this.lblMonto.TabIndex = 6;
+            this.lblMonto.Text = "Monto:";
+            // 
+            // lblGastado
+            // 
+            this.lblGastado.AutoSize = true;
+            this.lblGastado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.lblGastado.Location = new System.Drawing.Point(28, 261);
+            this.lblGastado.Name = "lblGastado";
+            this.lblGastado.Size = new System.Drawing.Size(69, 18);
+            this.lblGastado.TabIndex = 7;
+            this.lblGastado.Text = "Gastado:";
             // 
             // frmFinancias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(308, 345);
-            this.Controls.Add(this.label5);
+            this.ClientSize = new System.Drawing.Size(308, 394);
+            this.Controls.Add(this.lblGastado);
+            this.Controls.Add(this.lblMonto);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.cmdCalcular);
             this.Controls.Add(this.mrcConsumo);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtPresupuesto);
             this.Controls.Add(this.lblPresupuesto);
             this.Name = "frmFinancias";
             this.Text = "frmFinansas";
@@ -225,20 +215,19 @@
         #endregion
 
         private System.Windows.Forms.Label lblPresupuesto;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtPresupuesto;
         private System.Windows.Forms.GroupBox mrcConsumo;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtComida;
+        private System.Windows.Forms.TextBox txtAlquiler;
+        private System.Windows.Forms.TextBox txtImpuesto;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtVario;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button cmdCalcular;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblMonto;
+        private System.Windows.Forms.Label lblGastado;
     }
 }
