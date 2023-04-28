@@ -25,7 +25,7 @@ namespace pryMiPrimerProyecto
             varVario = Convert.ToDecimal(txtVario.Text);   
             varGastado = - varComida - varImpuesto - varVario - varAlquiler;
             varMonto = varPresupuesto - (varComida + varImpuesto + varVario + varAlquiler);
-            lblMonto.Text="Monto: " + varMonto.ToString();
+            lblMonto.Text= "Monto restante: " + varMonto.ToString();
             lblGastado.Text="Gastado: " + varGastado.ToString();
 
         }

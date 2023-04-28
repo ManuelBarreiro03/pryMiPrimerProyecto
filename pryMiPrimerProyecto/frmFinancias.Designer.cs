@@ -174,17 +174,17 @@
             // 
             this.lblMonto.AutoSize = true;
             this.lblMonto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.lblMonto.Location = new System.Drawing.Point(28, 231);
+            this.lblMonto.Location = new System.Drawing.Point(19, 242);
             this.lblMonto.Name = "lblMonto";
-            this.lblMonto.Size = new System.Drawing.Size(55, 18);
+            this.lblMonto.Size = new System.Drawing.Size(112, 18);
             this.lblMonto.TabIndex = 6;
-            this.lblMonto.Text = "Monto:";
+            this.lblMonto.Text = "Monto restante:";
             // 
             // lblGastado
             // 
             this.lblGastado.AutoSize = true;
             this.lblGastado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.lblGastado.Location = new System.Drawing.Point(28, 261);
+            this.lblGastado.Location = new System.Drawing.Point(19, 269);
             this.lblGastado.Name = "lblGastado";
             this.lblGastado.Size = new System.Drawing.Size(69, 18);
             this.lblGastado.TabIndex = 7;
