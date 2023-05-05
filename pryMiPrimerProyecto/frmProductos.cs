@@ -33,7 +33,7 @@ namespace pryMiPrimerProyecto
             varCantidad = Convert.ToInt32(nudCantidad.Value);
             varCaduca = dtpFechaCaduca.Value;
             varTipo = "";
-            lstLista.Items.Remove(varProducto + " " + varCantidad + " " + varCaduca);
+            lstLista.Items.Remove(varProducto + " " + varCaduca);
         }
 
         private void cmdborrarLista_Click(object sender, EventArgs e)
