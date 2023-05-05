@@ -26,7 +26,20 @@ namespace pryMiPrimerProyecto
             lstLista.Items.Add(varProducto +" "+ varCantidad+ " " + varCaduca);
         }
 
-        
+        private void cmdSacar_Click(object sender, EventArgs e)
+        {
+            varLugar = lstLugar.Text;
+            varProducto = lstProducto.Text;
+            varCantidad = Convert.ToInt32(nudCantidad.Value);
+            varCaduca = dtpFechaCaduca.Value;
+            varTipo = "";
+            lstLista.Items.Remove(varProducto + " " + varCantidad + " " + varCaduca);
+        }
+
+        private void cmdborrarLista_Click(object sender, EventArgs e)
+        {
+            lstLista.Items.Clear();
+        }
 
         public frmProductos()
         {

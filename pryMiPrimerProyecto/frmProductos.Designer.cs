@@ -38,7 +38,7 @@
             this.nudCantidad = new System.Windows.Forms.NumericUpDown();
             this.cmdAgregar = new System.Windows.Forms.Button();
             this.cmdSacar = new System.Windows.Forms.Button();
-            this.cmdCancelar = new System.Windows.Forms.Button();
+            this.cmdborrarLista = new System.Windows.Forms.Button();
             this.lblProductos = new System.Windows.Forms.Label();
             this.mrcTipoProducto = new System.Windows.Forms.GroupBox();
             this.lstProducto = new System.Windows.Forms.ComboBox();
@@ -157,15 +157,17 @@
             this.cmdSacar.TabIndex = 8;
             this.cmdSacar.Text = "Sacar";
             this.cmdSacar.UseVisualStyleBackColor = true;
+            this.cmdSacar.Click += new System.EventHandler(this.cmdSacar_Click);
             // 
-            // cmdCancelar
+            // cmdborrarLista
             // 
-            this.cmdCancelar.Location = new System.Drawing.Point(178, 326);
-            this.cmdCancelar.Name = "cmdCancelar";
-            this.cmdCancelar.Size = new System.Drawing.Size(80, 37);
-            this.cmdCancelar.TabIndex = 9;
-            this.cmdCancelar.Text = "Cancelar";
-            this.cmdCancelar.UseVisualStyleBackColor = true;
+            this.cmdborrarLista.Location = new System.Drawing.Point(178, 326);
+            this.cmdborrarLista.Name = "cmdborrarLista";
+            this.cmdborrarLista.Size = new System.Drawing.Size(80, 37);
+            this.cmdborrarLista.TabIndex = 9;
+            this.cmdborrarLista.Text = "Borrar lista";
+            this.cmdborrarLista.UseVisualStyleBackColor = true;
+            this.cmdborrarLista.Click += new System.EventHandler(this.cmdborrarLista_Click);
             // 
             // lblProductos
             // 
@@ -259,7 +261,7 @@
             this.Controls.Add(this.mrcCaducidad);
             this.Controls.Add(this.mrcTipoProducto);
             this.Controls.Add(this.lblProductos);
-            this.Controls.Add(this.cmdCancelar);
+            this.Controls.Add(this.cmdborrarLista);
             this.Controls.Add(this.cmdSacar);
             this.Controls.Add(this.cmdAgregar);
             this.Controls.Add(this.mrcTipo);
@@ -290,7 +292,7 @@
         private System.Windows.Forms.NumericUpDown nudCantidad;
         private System.Windows.Forms.Button cmdAgregar;
         private System.Windows.Forms.Button cmdSacar;
-        private System.Windows.Forms.Button cmdCancelar;
+        private System.Windows.Forms.Button cmdborrarLista;
         private System.Windows.Forms.Label lblProductos;
         private System.Windows.Forms.GroupBox mrcTipoProducto;
         private System.Windows.Forms.ComboBox lstProducto;
