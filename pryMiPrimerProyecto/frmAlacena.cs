@@ -11,14 +11,19 @@ using System.Windows.Forms;
 namespace pryMiPrimerProyecto
 {
     public partial class frmAlacena : Form
-    {
-        decimal cantidadAlcena;
+        int     varCantAlacena, varCantHeladera;
+        
         public frmAlacena()
         {
             InitializeComponent();
         }
 
         private void cmdAgregarAlcena_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lstAlimentosAlacena_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
