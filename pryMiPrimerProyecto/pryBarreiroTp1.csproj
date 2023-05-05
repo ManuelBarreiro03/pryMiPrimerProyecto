@@ -55,11 +55,11 @@
     <Compile Include="frmAlacena.Designer.cs">
       <DependentUpon>frmAlacena.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAlimetos.cs">
+    <Compile Include="frmProductos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAlimetos.Designer.cs">
-      <DependentUpon>frmAlimetos.cs</DependentUpon>
+    <Compile Include="frmProductos.Designer.cs">
+      <DependentUpon>frmProductos.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPrincipal.cs">
       <SubType>Form</SubType>
@@ -78,8 +78,8 @@
     <EmbeddedResource Include="frmAlacena.resx">
       <DependentUpon>frmAlacena.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAlimetos.resx">
-      <DependentUpon>frmAlimetos.cs</DependentUpon>
+    <EmbeddedResource Include="frmProductos.resx">
+      <DependentUpon>frmProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
