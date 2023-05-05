@@ -46,6 +46,7 @@
             this.LblFechaCaducidad = new System.Windows.Forms.Label();
             this.dtpFechaCaduca = new System.Windows.Forms.DateTimePicker();
             this.mrcCaducidad = new System.Windows.Forms.GroupBox();
+            this.lstLista = new System.Windows.Forms.ListBox();
             this.mrcTipo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudCantidad)).BeginInit();
             this.mrcTipoProducto.SuspendLayout();
@@ -146,7 +147,7 @@
             this.cmdAgregar.TabIndex = 7;
             this.cmdAgregar.Text = "Agregar";
             this.cmdAgregar.UseVisualStyleBackColor = true;
-            this.cmdAgregar.Click += new System.EventHandler(this.button1_Click);
+            this.cmdAgregar.Click += new System.EventHandler(this.cmdAgregar_Click);
             // 
             // cmdSacar
             // 
@@ -241,11 +242,20 @@
             this.mrcCaducidad.TabStop = false;
             this.mrcCaducidad.Text = "Caducidad";
             // 
+            // lstLista
+            // 
+            this.lstLista.FormattingEnabled = true;
+            this.lstLista.Location = new System.Drawing.Point(268, 32);
+            this.lstLista.Name = "lstLista";
+            this.lstLista.Size = new System.Drawing.Size(177, 329);
+            this.lstLista.TabIndex = 15;
+            // 
             // frmProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(269, 395);
+            this.ClientSize = new System.Drawing.Size(457, 372);
+            this.Controls.Add(this.lstLista);
             this.Controls.Add(this.mrcCaducidad);
             this.Controls.Add(this.mrcTipoProducto);
             this.Controls.Add(this.lblProductos);
@@ -288,5 +298,6 @@
         private System.Windows.Forms.Label LblFechaCaducidad;
         private System.Windows.Forms.DateTimePicker dtpFechaCaduca;
         private System.Windows.Forms.GroupBox mrcCaducidad;
+        private System.Windows.Forms.ListBox lstLista;
     }
 }

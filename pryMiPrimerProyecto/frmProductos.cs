@@ -16,13 +16,14 @@ namespace pryMiPrimerProyecto
         string varTipo, varLugar, varProducto;
         DateTime varCaduca;
 
-        private void button1_Click(object sender, EventArgs e)
+        private void cmdAgregar_Click(object sender, EventArgs e)
         {
             varLugar = lstLugar.Text;
             varProducto = lstProducto.Text;
             varCantidad = Convert.ToInt32(nudCantidad.Value);
             varCaduca = dtpFechaCaduca.Value;
             varTipo = "";
+            lstLista.Items.Add(varProducto +" "+ varCantidad+ " " + varCaduca);
         }
 
         
