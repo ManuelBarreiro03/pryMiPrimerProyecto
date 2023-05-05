@@ -123,7 +123,6 @@
             this.lstAlimentosAlacena.Name = "lstAlimentosAlacena";
             this.lstAlimentosAlacena.Size = new System.Drawing.Size(167, 28);
             this.lstAlimentosAlacena.TabIndex = 3;
-            this.lstAlimentosAlacena.SelectedIndexChanged += new System.EventHandler(this.lstAlimentosAlacena_SelectedIndexChanged);
             // 
             // txtAlacena
             // 

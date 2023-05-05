@@ -10,20 +10,11 @@ using System.Windows.Forms;
 
 namespace pryMiPrimerProyecto
 {
-    public partial class frmAlacena : Form
-    {   
-        int     varCantAlacena, varCantHeladera;
-        
-        public frmAlacena()
+    public partial class frmAlimetos : Form
+    {
+        public frmAlimetos()
         {
             InitializeComponent();
         }
-
-        private void cmdAgregarAlcena_Click(object sender, EventArgs e)
-        {
-
-        }
-
-       
     }
 }

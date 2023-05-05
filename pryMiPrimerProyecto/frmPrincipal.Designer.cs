@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cmdAlimentos = new System.Windows.Forms.Button();
+            this.cmdAlacena = new System.Windows.Forms.Button();
             this.cmdFinancias = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.cmdAlimetos = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // cmdAlimentos
+            // cmdAlacena
             // 
-            this.cmdAlimentos.Location = new System.Drawing.Point(12, 12);
-            this.cmdAlimentos.Name = "cmdAlimentos";
-            this.cmdAlimentos.Size = new System.Drawing.Size(442, 187);
-            this.cmdAlimentos.TabIndex = 0;
-            this.cmdAlimentos.Text = "Alimentos";
-            this.cmdAlimentos.UseVisualStyleBackColor = true;
-            this.cmdAlimentos.Click += new System.EventHandler(this.button1_Click);
+            this.cmdAlacena.Location = new System.Drawing.Point(12, 12);
+            this.cmdAlacena.Name = "cmdAlacena";
+            this.cmdAlacena.Size = new System.Drawing.Size(442, 187);
+            this.cmdAlacena.TabIndex = 0;
+            this.cmdAlacena.Text = "Alacena";
+            this.cmdAlacena.UseVisualStyleBackColor = true;
+            this.cmdAlacena.Click += new System.EventHandler(this.button1_Click);
             // 
             // cmdFinancias
             // 
@@ -53,24 +53,24 @@
             this.cmdFinancias.UseVisualStyleBackColor = true;
             this.cmdFinancias.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button1
+            // cmdAlimetos
             // 
-            this.button1.Location = new System.Drawing.Point(12, 398);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(442, 187);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.cmdAlimetos.Location = new System.Drawing.Point(12, 398);
+            this.cmdAlimetos.Name = "cmdAlimetos";
+            this.cmdAlimetos.Size = new System.Drawing.Size(442, 187);
+            this.cmdAlimetos.TabIndex = 2;
+            this.cmdAlimetos.Text = "Alimentos";
+            this.cmdAlimetos.UseVisualStyleBackColor = true;
+            this.cmdAlimetos.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(467, 598);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.cmdAlimetos);
             this.Controls.Add(this.cmdFinancias);
-            this.Controls.Add(this.cmdAlimentos);
+            this.Controls.Add(this.cmdAlacena);
             this.Name = "frmPrincipal";
             this.Text = "frmAlimentos";
             this.Load += new System.EventHandler(this.frmPrincipal_Load);
@@ -80,8 +80,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button cmdAlimentos;
+        private System.Windows.Forms.Button cmdAlacena;
         private System.Windows.Forms.Button cmdFinancias;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button cmdAlimetos;
     }
 }
